@@ -13,7 +13,7 @@ const Success = () => {
   }, []);
 
   const clearCart = async () => {
-    const res = await axios.get("https://flavoro-backend-9t40.onrender.com/api/clear-cart");
+    const res = await axios.get("https://flavoro-clone-backend.onrender.com/api/clear-cart");
     const data = await res.data;
     toast.success(data.message);
   };

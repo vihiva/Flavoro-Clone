@@ -24,7 +24,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const checkout = async () => {
-    const res = await axios.get("https://flavoro-backend-9t40.onrender.com/api/checkout");
+    const res = await axios.get("https://flavoro-clone-backend.onrender.com/api/checkout");
     const {url}= await res.data;
     window.location.href = url;
   };

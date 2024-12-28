@@ -12,7 +12,7 @@ const FoodCard = ({ id, name, price, desc, img, rating, handleToast }) => {
 
   const addToCart = async ({ id, name, img, price, rating, quantity }) => {
     const res = await axios.post(
-      `https://flavoro-backend-9t40.onrender.com/add-to-cart/${user._id}`,
+      `https://flavoro-clone-backend.onrender.com/api/add-to-cart/${user._id}`,
       {
         id,
         image: img,

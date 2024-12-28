@@ -13,7 +13,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
 
-    const res = await axios.post(`https://flavoro-backend-9t40.onrender.com/api/signup`, {
+    const res = await axios.post(`https://flavoro-clone-backend.onrender.com/api/signup`, {
       name,
       email,
       password,

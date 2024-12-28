@@ -19,7 +19,7 @@ const Navbar = () => {
   const user = useSelector((state) => state.auth.user);
 
   const getUser = async () => {
-    const res = await axios.get("https://flavoro-backend-9t40.onrender.com/api/get-user", {
+    const res = await axios.get("https://flavoro-clone-backend.onrender.com/api/get-user", {
       withCredentials: true,
     });
     const data = await res.data;

@@ -15,7 +15,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const res = await axios.post("https://flavoro-backend-9t40.onrender.com/api/login", {
+    const res = await axios.post("https://flavoro-clone-backend.onrender.com/api/login", {
       email,
       password,
     });
